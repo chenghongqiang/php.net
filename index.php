@@ -13,4 +13,5 @@ $validate = validate::get_instance();
 var_dump($validate->isInt(2));
 var_dump($validate->isRangeWithDefault(2,4,5));
 var_dump($validate->isUrl("http://www"));
+var_dump($validate->callback(""));
 

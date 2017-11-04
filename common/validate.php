@@ -207,20 +207,26 @@ class validate{
         return $ret;
     }
 
+    /**
+     * 回调
+     * @param $str
+     * @return mixed
+     */
+    public function callback($str){
 
+        function foo($value){
+            if(strpos($value, ", ")===false){
+                return false;
+            }
 
+            list($first, $sencond) = explode(", ", $value);
+            return $first.$sencond;
+        }
 
+        $str = "kewin, hello world";
+        $ret = filter_var($str, FILTER_CALLBACK, array('options'=>'foo'));
 
-
-
-
-
-
-
-
-
-
-
-
+        return $ret;
+    }
 
 }
