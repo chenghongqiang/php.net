@@ -183,9 +183,9 @@ class validate{
 
         /**
          *  FILTER_FLAG_SCHEME_REQUIRED – 要求 URL 是 RFC 兼容 URL。（比如：http://cg.am）
-            FILTER_FLAG_HOST_REQUIRED – 要求 URL 包含主机名（比如：http://levi.cg.com）
-            FILTER_FLAG_PATH_REQUIRED – 要求 URL 在主机名后存在路径（比如：http://levi.cg.am/test/phpmailer/）
-            FILTER_FLAG_QUERY_REQUIRED – 要求 URL 存在查询字符串（比如：http://levi.cg.am/?p=2618）
+         *  FILTER_FLAG_HOST_REQUIRED – 要求 URL 包含主机名（比如：http://levi.cg.com）
+         *  FILTER_FLAG_PATH_REQUIRED – 要求 URL 在主机名后存在路径（比如：http://levi.cg.am/test/phpmailer/）
+         *  FILTER_FLAG_QUERY_REQUIRED – 要求 URL 存在查询字符串（比如：http://levi.cg.am/?p=2618）
          */
         $ret = filter_var($url, FILTER_VALIDATE_URL);
         return $ret;
