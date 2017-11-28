@@ -3,3 +3,6 @@
 *.css.map
 sonar-project.properties
 .sonar/
+
+/vendor/
+composer.lock
